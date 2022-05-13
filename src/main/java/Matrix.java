@@ -18,7 +18,7 @@ public class Matrix {
         return result;
     }
 
-    public void columnsWithMax(int[][] matrix){
+    public static int columnsWithMax(int[][] matrix){
         int result = 0;
         ArrayList<Integer> all = new ArrayList<>();
         for (int[] ints : matrix) {
@@ -33,5 +33,6 @@ public class Matrix {
                 result = all.get(i);
             }
         }
+        return result;
     }
 }
